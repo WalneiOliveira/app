@@ -1,0 +1,36 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Subscribe To My Newsletter...</h1>
+        </div>
+    </div>
+    <br /><br />
+    <form action="/form" method="POST">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" name='first_name'>
+            </div>
+
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" name='last_name'>
+            </div>
+        </div>
+        <br /><br />
+        <div class="form" action="/form" method="POST">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Email Adress" name='email'>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+</div>
+
+
+{% endblock %}

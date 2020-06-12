@@ -1,0 +1,23 @@
+{% extends "public/templates/public_template.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Thank you to subscribing...</h1>
+            <small>Please Confirm Your Information</small>
+
+            <br/><br/>
+            {{ first_name }} {{ last_name }} || {{ email }}
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
